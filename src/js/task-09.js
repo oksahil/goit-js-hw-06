@@ -15,5 +15,4 @@ function btnClick() {
   console.log(colorClick);
   refs.colorText.textContent = colorClick;
   refs.body.style.backgroundColor = colorClick;
-// refs.colorText.style.color = colorClick;
 };
