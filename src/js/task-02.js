@@ -8,11 +8,19 @@ const ingredients = [
 ];
 const listEl = document.querySelector("ul");
 
-ingredients.forEach(ingredient => {
-  const listIngredientsEl = document.createElement("li");
-  listIngredientsEl.classList.add('item');
-  listIngredientsEl.textContent = ingredient;
-  listEl.appendChild(listIngredientsEl);
+function createItem() {
+  document.createElement("li").classList.add('item');
+  console.log()
+}
+
+const addItem = ingredients.forEach(ingredient => {
+  createItem(ingredient);
+
+//   const listIngredientsEl = document.createElement("li");
+//   listIngredientsEl.classList.add('item');
+//   listIngredientsEl.textContent = ingredient;
+  // listEl.appendChild(listIngredientsEl);
 }
 );
-console.log(listEl);
+// console.log(listEl);
+listEl.insertAdjacentHTML('beforeend', addItem);
